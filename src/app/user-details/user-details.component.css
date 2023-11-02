@@ -1,0 +1,10 @@
+.details-container{
+    background-color: aliceblue;
+    width:fit-content;
+    padding: 10px;
+    border:2px solid black;
+}
+
+.details-container input{
+    padding: 4px;
+}

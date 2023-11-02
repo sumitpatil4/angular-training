@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="api-container">
+        <div>
+            <label for="userName">GITHUB USERNAME</label><br>
+            <input name="userName" type="text" [(ngModel)]="userName"><br>
+        </div>
+        <button class="btn" (click)="getUser()">Get User</button>
+    </div>
+    <div *ngIf="dataFlag == true" class="api-response">
+        <p><b>{{responseHeading}}</b></p>
+        <div *ngIf="apiResponse!=''">
+            <p><b>Id</b> : {{apiResponse?.id}}</p>
+            <p><b>Username</b> : {{apiResponse?.login}}</p>
+            <p><b>Link</b> : {{apiResponse?.html_url}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+.container{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px;
+}
+
+.api-container{
+    background-color: #f5f2f2;
+    padding: 10px;
+    width:50vw;
+    min-height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.api-container div{
+    width: 80%;
+}
+
+input{
+    width:100%;
+    padding: 6px;
+}
+
+.btn{
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.api-container button{
+    margin:10px;
+}
+
+.api-response{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f5f2f2;
+    padding: 10px;
+    width:50vw;
+    height:20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.api-response>div{
+    margin-top: 10px;
+}

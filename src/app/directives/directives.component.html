@@ -1,0 +1,8 @@
+<div *ngIf="colors.length != 0" class="color-list">
+    <div class="color-container">
+        <h4>Color List</h4>
+        <div *ngFor="let color of colors">
+            <p [ngClass]="'blue-text'">{{color}}</p>
+        </div>
+    </div>
+</div>

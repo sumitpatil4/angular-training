@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-app';
+  email:string = "sumit6921@gmail.com"
+
+  getData(userDetails:string){
+    console.log(userDetails);
+  }
 }
