@@ -9,7 +9,10 @@ import { ApiCallComponent } from './api-call/api-call.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormComponent } from './form/form.component';
 import { DirectivesComponent } from './directives/directives.component';
-
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { UserReducer } from './form.reducer';
+import { UserEffects } from './form.effect';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,9 @@ import { DirectivesComponent } from './directives/directives.component';
     FormsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    StoreModule.forRoot({userDetails : UserReducer}),
+    EffectsModule.forRoot([UserEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]
